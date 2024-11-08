@@ -11,10 +11,15 @@ texture = ExtResource("1_wra6r")
 3:0/0 = 0
 4:0/0 = 0
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:0/0 = 0
 13:0/0 = 0
 14:0/0 = 0
@@ -28,10 +33,15 @@ texture = ExtResource("1_wra6r")
 3:1/0 = 0
 4:1/0 = 0
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:1/0 = 0
 13:1/0 = 0
 14:1/0 = 0
@@ -43,8 +53,11 @@ texture = ExtResource("1_wra6r")
 1:2/0 = 0
 2:2/0 = 0
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:2/0 = 0
 14:2/0 = 0
 15:2/0 = 0
@@ -151,6 +164,8 @@ texture = ExtResource("1_wra6r")
 20:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_uxsvd"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_6v1ph")
 
 [node name="LevelBase" type="Node2D"]
@@ -162,7 +177,8 @@ tile_map_data = PackedByteArray("AAAAAP//AAAGAAAAAAABAP//AAAHAAAAAAACAP//AAAHAAA
 tile_set = SubResource("TileSet_uxsvd")
 
 [node name="Player" parent="TileMapLayers" instance=ExtResource("2_f676a")]
-position = Vector2(25, -35)
+position = Vector2(35, -115)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(31, -145)
 zoom = Vector2(2, 2)
