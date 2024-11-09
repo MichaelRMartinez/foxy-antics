@@ -177,4 +177,4 @@ tile_map_data = PackedByteArray("AAAAAP//AAAGAAAAAAABAP//AAAHAAAAAAACAP//AAAHAAA
 tile_set = SubResource("TileSet_uxsvd")
 
 [node name="Player" parent="TileMapLayers" instance=ExtResource("2_f676a")]
-position = Vector2(35, -115)
+position = Vector2(36, -35)
