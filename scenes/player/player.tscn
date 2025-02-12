@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cnp81djfqxh2q"]
+[gd_scene load_steps=11 format=3 uid="uid://cnp81djfqxh2q"]
 
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_sg4dh"]
 [ext_resource type="Texture2D" uid="uid://c1qllgcc24j64" path="res://assets/player/player.png" id="1_ufnpo"]
 
 [sub_resource type="Animation" id="Animation_ocb6g"]
@@ -113,7 +114,12 @@ _data = {
 "run": SubResource("Animation_e58ma")
 }
 
-[node name="player" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kkequ"]
+size = Vector2(10, 18)
+
+[node name="player" type="CharacterBody2D" groups=["Moveables"]]
+collision_layer = 0
+script = ExtResource("1_sg4dh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ufnpo")
@@ -125,3 +131,7 @@ libraries = {
 "": SubResource("AnimationLibrary_f3rar")
 }
 autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 7)
+shape = SubResource("RectangleShape2D_kkequ")
