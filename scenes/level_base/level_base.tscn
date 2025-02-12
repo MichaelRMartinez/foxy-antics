@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://ceamwmfb5ykmn"]
+[gd_scene load_steps=6 format=4 uid="uid://ceamwmfb5ykmn"]
 
 [ext_resource type="Texture2D" uid="uid://y2vnrnopalcc" path="res://assets/tiles/Terrain (16x16).png" id="1_ydqkm"]
 [ext_resource type="PackedScene" uid="uid://cnp81djfqxh2q" path="res://scenes/player/player.tscn" id="2_wnfu0"]
+[ext_resource type="PackedScene" uid="uid://oxdu2fycnf5n" path="res://scenes/player_cam/player_cam.tscn" id="3_hnslu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_305k6"]
 texture = ExtResource("1_ydqkm")
@@ -185,9 +186,7 @@ sources/0 = SubResource("TileSetAtlasSource_305k6")
 tile_map_data = PackedByteArray("AAAAAP//AAAGAAAAAAANAP//AAAIAAAAAAABAP//AAAHAAAAAAACAP//AAAHAAAAAAADAP//AAAHAAAAAAAEAP//AAAHAAAAAAAFAP//AAAHAAAAAAAGAP//AAAHAAAAAAAHAP//AAAHAAAAAAAIAP//AAAHAAAAAAAJAP//AAAHAAAAAAAKAP//AAAHAAAAAAALAP//AAAHAAAAAAAMAP//AAAHAAAAAAASAP//AAAGAAAAAAATAP//AAAGAAAAAAAfAP//AAAHAAAAAAAUAP//AAAHAAAAAAAVAP//AAAHAAAAAAAWAP//AAAHAAAAAAAXAP//AAAHAAAAAAAYAP//AAAHAAAAAAAZAP//AAAHAAAAAAAaAP//AAAHAAAAAAAbAP//AAAHAAAAAAAcAP//AAAHAAAAAAAdAP//AAAHAAAAAAAeAP//AAAHAAAAAAD7//z/AAAGAAAAAAD8//z/AAAHAAAAAAD9//z/AAAIAAAAAAD3//r/AAAGAAAAAAD4//r/AAAHAAAAAAD5//r/AAAIAAAAAADz//j/AAAGAAAAAAD0//j/AAAHAAAAAAD1//j/AAAIAAAAAADv//b/AAAGAAAAAADw//b/AAAHAAAAAADx//b/AAAIAAAAAADr//T/AAAGAAAAAADs//T/AAAHAAAAAADt//T/AAAIAAAAAAAGAPv/AAAGAAAAAAAHAPv/AAAHAAAAAAAIAPv/AAAIAAAAAAALAPn/AAAGAAAAAAAMAPn/AAAHAAAAAAANAPn/AAAIAAAAAAAQAPf/AAAGAAAAAAARAPf/AAAHAAAAAAASAPf/AAAIAAAAAAAgAP//AAAHAAAAAAAhAP//AAAHAAAAAAAiAP//AAAHAAAAAAAjAP//AAAHAAAAAAAkAP//AAAIAAAAAAAnAP//AAAGAAAAAAAoAP//AAAHAAAAAAApAP//AAAHAAAAAAAqAP//AAAHAAAAAAArAP//AAAHAAAAAAAsAP//AAAHAAAAAAAtAP//AAAHAAAAAAAuAP//AAAHAAAAAAAvAP//AAAHAAAAAAAwAP//AAAIAAAAAAANAP7/AAARAAQAAAA=")
 tile_set = SubResource("TileSet_kcbry")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(256, -149)
-zoom = Vector2(2, 2)
-
 [node name="player" parent="." instance=ExtResource("2_wnfu0")]
-position = Vector2(40, -120)
+position = Vector2(51, -147)
+
+[node name="PlayerCam" parent="player" instance=ExtResource("3_hnslu")]
