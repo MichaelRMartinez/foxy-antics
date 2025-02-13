@@ -117,7 +117,7 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkequ"]
 size = Vector2(10, 18)
 
-[node name="player" type="CharacterBody2D" groups=["Moveables"]]
+[node name="player" type="CharacterBody2D" groups=["Moveables", "Player"]]
 collision_layer = 0
 script = ExtResource("1_sg4dh")
 
